@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CuentaAhorrosTest {
 
     @Test
-    void testConstructor() {
+    void testConstructor1() {
         CuentaAhorros cuenta = new CuentaAhorros(15000, 2);
         assertTrue(cuenta.activa);
         assertEquals(15000, cuenta.saldo, 0.001);
