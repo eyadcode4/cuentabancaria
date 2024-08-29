@@ -15,7 +15,7 @@ public class ComputadorTest {
 
         assertEquals("Apple", computador.getMarca());
         assertEquals(16, computador.getMemoria());
-        assertEquals("Intel i7", computador.getcaracteristicasDelProcesador());
+        assertEquals("Intel i7", computador.getCaracteristicasProcesador());
         assertEquals("Os 10", computador.getSistemaOperativo());
         assertEquals(2000.00, computador.getPrecio());
     }
@@ -34,8 +34,8 @@ public class ComputadorTest {
         assertEquals(16, computador.getMemoria());
 
 
-        computador.setcaracteristicasDelProcesador("Intel i7");
-        assertEquals("Intel i7", computador.getcaracteristicasDelProcesador());
+        computador.setCaracteristicasProcesador("Intel i7");
+        assertEquals("Intel i7", computador.getCaracteristicasProcesador());
 
 
         computador.setSistemaOperativo("Windows 12");
