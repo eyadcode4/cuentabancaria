@@ -2,8 +2,8 @@ package eyad.dev;
 
 public class Cuenta {
     protected float saldo;
-    protected int numeroConsignaciones = 0;
-    protected int numeroRetiros = 0;
+    protected int numeroDeConsignaciones = 0;
+    protected int numeroDeRetiros = 0;
     protected float tasaAnual;
     protected float comisionMensual = 0;
 
@@ -15,14 +15,14 @@ public class Cuenta {
     public void consignar(float monto) {
         if (monto > 0) {
             saldo += monto;
-            numeroConsignaciones++;
+            numeroDeConsignaciones++;
         }
     }
 
     public void retirar(float monto) {
         if (monto > 0 && monto <= saldo) {
             saldo -= monto;
-            numeroRetiros++;
+            numeroDeRetiros++;
         }
     }
 
@@ -38,7 +38,7 @@ public class Cuenta {
 
     public String imprimir() {
         return "Saldo: " + saldo + "\nComisión Mensual: " + comisionMensual +
-               "\nNúmero de consignaciones: " + numeroConsignaciones +
-               "\nNúmero de retiros: " + numeroRetiros;
+               "\nNúmero de consignaciones: " + numeroDeConsignaciones +
+               "\nNúmero de retiros: " + numeroDeRetiros;
     }
 }

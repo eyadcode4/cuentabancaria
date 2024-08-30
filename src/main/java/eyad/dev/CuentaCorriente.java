@@ -16,7 +16,7 @@ public class CuentaCorriente extends Cuenta {
                 sobregiro += (monto - saldo);
                 saldo = 0;
             }
-            numeroRetiros++;
+            numeroDeRetiros++;
         }
     }
 
@@ -33,7 +33,7 @@ public class CuentaCorriente extends Cuenta {
                 }
             }
             saldo += monto;
-            numeroConsignaciones++;
+            numeroDeConsignaciones++;
         }
     }
 

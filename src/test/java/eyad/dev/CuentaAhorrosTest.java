@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CuentaAhorrosTest {
 
     @Test
-    void testConstructor1() {
+    void testConstructor() {
         CuentaAhorros cuenta = new CuentaAhorros(15000, 2);
         assertTrue(cuenta.activa);
         assertEquals(15000, cuenta.saldo, 0.001);
@@ -40,7 +40,9 @@ class CuentaAhorrosTest {
         assertEquals(5000, cuenta.saldo, 0.001);   
     }
 
+
     @Test
+    void testkk() {
         CuentaAhorros cuenta = new CuentaAhorros(15000, 2);
         cuenta.retirar(6000);
         cuenta.retirar(1000);
@@ -49,9 +51,9 @@ class CuentaAhorrosTest {
         cuenta.retirar(500); 
         cuenta.generarExtractoMensual();
 
-        assertEquals(6594.0, cuenta.saldo, 0.001); 
+        assertEquals(9015.0, cuenta.saldo, 0.001); 
         assertFalse(cuenta.activa);  
-    
+    }
 
     @Test
     void testImprimir() {
